@@ -6,5 +6,11 @@ namespace TestAlgorithms
     public class DataStructuresTests
     {
         //TODO: Move methods from Algorithms Project to this project
+
+        [TestMethod]
+        public void DummyTest()
+        {
+            Assert.IsTrue(true);
+        }
     }
 }

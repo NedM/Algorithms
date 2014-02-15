@@ -9,7 +9,7 @@ using Algorithms.Types;
 
 namespace Algorithms
 {
-    public class Utilities
+    public static class Utilities
     {
         public static int[] GenerateRandomizedArray(int length, int minimum, int maximum)
         {
@@ -789,14 +789,43 @@ namespace Algorithms
 
         public static int CalculateHammingDistance(int a, int b)
         {
-            int dist = 0, val = a ^ b;
+            int dist = 0;
+            int val = a ^ b;
+
             // Count the number of set bits (Knuth's algorithm)
             while (val > 0)
             {
                 ++dist;
                 val &= val - 1;
             }
+
             return dist;
+        }
+
+        private static int GetNumBinaryBits(int value)
+        {
+            return Convert.ToString(value, 2).Length;
+        }
+
+        public static int[] ToBinaryArray(this int value)
+        {
+            int length = GetNumBinaryBits(value);
+            return value.ToBinaryArray(length);
+        }
+
+        public static int[] ToBinaryArray(this int value, int lengthOfOutput)
+        {
+            int i = 0;
+            int[] outputArray = new int[lengthOfOutput];
+            int lastPositionInArray = lengthOfOutput - 1;
+
+            while (i < lengthOfOutput)
+            {
+                outputArray[lastPositionInArray - i] = ((value & (1 << i)) != 0) ? 1 : 0;
+                i++;
+            }
+
+            return outputArray;
         }
     }
 }

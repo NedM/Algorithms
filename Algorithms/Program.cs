@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows;
+using Algorithms.ArithmeticOperations;
 
 namespace Algorithms
 {
@@ -21,6 +22,9 @@ namespace Algorithms
             //Console.WriteLine(string.Format("There are {0} digits in {1}.", GetNumDigits(testA), testA));
 
             watch.Start();
+
+            int[] arrayValue = 57.ToBinaryArray(32);
+            var exponentiated = 4.Exp(2);
 
             #region PQ3
 
