@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F471081F-9B07-44ED-A16D-A7D6AD6E1A45}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Algorithms</RootNamespace>
+    <AssemblyName>Algorithms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataStructures\ArrayHeap.cs" />
+    <Compile Include="DataStructures\BinaryTree.cs" />
+    <Compile Include="DataStructures\IGraph.cs" />
+    <Compile Include="DataStructures\UnionFind.cs" />
+    <Compile Include="Dynamic Programming\FloydWarshallMinPaths.cs" />
+    <Compile Include="Dynamic Programming\JohnsonsMinPaths.cs" />
+    <Compile Include="Dynamic Programming\KnapsackProblem.cs" />
+    <Compile Include="Dynamic Programming\BellmanFordMinPath.cs" />
+    <Compile Include="Dynamic Programming\TravellingSalesmanProblem.cs" />
+    <Compile Include="Graph Search\KruskalsMinSpanTree.cs" />
+    <Compile Include="Graph Search\PrimsMinSpanTree.cs" />
+    <Compile Include="Programming Questions\Algorithms2_ProgQuest1.cs" />
+    <Compile Include="Programming Questions\Algorithms2_ProgQuest2.cs" />
+    <Compile Include="Programming Questions\Algorithms2_ProgQuest3.cs" />
+    <Compile Include="Programming Questions\Algorithms2_ProgQuest4.cs" />
+    <Compile Include="Programming Questions\Algorithms2_ProgQuest5.cs" />
+    <Compile Include="Programming Questions\Algorithms2_ProgQuest6.cs" />
+    <Compile Include="Types\ILeader.cs" />
+    <Compile Include="Types\KnapsackItem.cs" />
+    <Compile Include="Types\PointStruct.cs" />
+    <Compile Include="Types\TreeNodeClass.cs" />
+    <Compile Include="Types\EdgeClass.cs" />
+    <Compile Include="DataStructures\GraphBaseClass.cs" />
+    <Compile Include="DataStructures\Graph_AdjacencyList.cs" />
+    <Compile Include="DataStructures\Graph_AdjacencyList_Lite.cs" />
+    <Compile Include="DataStructures\Graph_AdjacencyMatrix.cs" />
+    <Compile Include="DataStructures\HashMap.cs" />
+    <Compile Include="DataStructures\Heap.cs" />
+    <Compile Include="Types\MultiValueDictionary.cs" />
+    <Compile Include="Types\VertexClass.cs" />
+    <Compile Include="Graph Search\BreadthFirstSearch.cs" />
+    <Compile Include="Graph Search\DepthFirstSearch.cs" />
+    <Compile Include="Graph Search\DijkstrasMinPath.cs" />
+    <Compile Include="Graph Search\StronglyConnectedComponents_Kosarajus.cs" />
+    <Compile Include="MasterMethodEval.cs" />
+    <Compile Include="Minimum Cut\RandomizedContraction.cs" />
+    <Compile Include="Programming Questions\AthenaHealthWallBuildingClass.cs" />
+    <Compile Include="Programming Questions\ProgQuest4.cs" />
+    <Compile Include="Programming Questions\ProgQuest5.cs" />
+    <Compile Include="Sorting\MergeSort.cs" />
+    <Compile Include="Programming Questions\ProgQuest1.cs" />
+    <Compile Include="Programming Questions\ProgQuest2.cs" />
+    <Compile Include="Programming Questions\ProgQuest3.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorting\QuickSort.cs" />
+    <Compile Include="Types\WeightedJobStruct.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
