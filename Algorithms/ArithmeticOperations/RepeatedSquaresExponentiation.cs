@@ -51,7 +51,10 @@ namespace Algorithms.ArithmeticOperations
 
             if (partialResult > double.MaxValue)
             {
-                throw new InvalidOperationException(string.Format("Cannot return result of {0}^{1} because it is too large for an double."));
+                throw new InvalidOperationException(
+                    string.Format("Cannot return result of {0}^{1} because it is too large for an double.",
+                                  exponentBase,
+                                  exponentValue));
             }
 
             return partialResult;
